@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "jeftify"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -19,6 +20,8 @@
     "prop-types": "^15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.2",
+    "react-native-gesture-handler": "^1.4.1",
+    "react-navigation": "^4.0.10",
     "react-redux": "^7.1.1",
     "reactotron-redux": "^3.1.2",
     "reactotron-redux-saga": "^4.2.2",
@@ -45,6 +48,7 @@
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
+    "jetifier": "^1.6.4",
     "metro-react-native-babel-preset": "^0.56.3",
     "prettier": "^1.18.2",
     "react-test-renderer": "16.9.0"
