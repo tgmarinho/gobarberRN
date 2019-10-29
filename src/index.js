@@ -2,7 +2,7 @@ import './config/ReactotronConfig';
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { Provider } from 'react-redux';
-import { PersitGate, PersistGate } from 'redux-persist/integration/react';
+import { PersistGate } from 'redux-persist/integration/react';
 import Routes from './routes';
 
 import { store, persistor } from './store';
