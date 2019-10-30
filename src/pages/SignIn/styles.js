@@ -22,6 +22,7 @@ export const Form = styled.View`
 export const FormInput = styled(Input)`
   margin-bottom: 10px;
 `;
+
 export const SubmitButton = styled(Button)`
   margin-top: 5px;
 `;

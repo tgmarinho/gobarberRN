@@ -44,9 +44,10 @@ export function* signUp({ payload }) {
       email,
       password,
     });
-
+    Alert.alert('Cadastro de Usuário', 'Cadastradado com sucesso!');
     // history.push('/');
   } catch (err) {
+    console.tron.log('erro no cadastro', err);
     Alert.alert('Falha no cadastro', 'verifique seus dados');
     yield put(signFailure());
   }
@@ -60,13 +61,8 @@ export function setToken({ payload }) {
   }
 }
 
-export function signOut() {
-  // history.push('/');
-}
-
 export default all([
   takeLatest('persist/REHYDRATE', setToken),
   takeLatest('@auth/SIGN_IN_REQUEST', signIn),
   takeLatest('@auth/SIGN_UP_REQUEST', signUp),
-  takeLatest('@auth/SIGN_OUT', signOut),
 ]);
