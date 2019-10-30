@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Background from '~/components/Background';
 
